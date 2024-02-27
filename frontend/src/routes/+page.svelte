@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Marquee from '$lib/components/Marquee.svelte';
+    import Articles from '$lib/components/Articles.svelte';
+</script>
+
+<div class="flex flex-col">
+    <div class="h-[92.5vh]">
+        <Articles />
+    </div>
+    <div class="h-full bg-brown marquee">
+        <Marquee />
+    </div>
+</div>
